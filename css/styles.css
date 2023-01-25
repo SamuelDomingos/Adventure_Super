@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*******/
+
+header{
+    margin-top: 2rem;
+}
+
+.menu{
+    align-items: center;
+}
+
+header .links nav ul li{
+    margin: 0 1rem;
+    list-style-type: none;
+}
+
+header .links nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .links nav ul li:nth-last-child(1) a{
+    color: #fff;
+    font-size: 1rem;
+    background-color: #2bb222;
+    padding: .7rem 1.8rem;
+    transition: 0.5s;
+}
+
+header .links nav ul li:nth-last-child(1) a:hover{
+    background-color: #26981d;
+}
+
+/*******/
+
+section.sessao1{
+    margin-top: 2.5rem;
+}
+
+section.sessao1 .textos-conteudo{
+    flex: 50%;
+    padding: 1.8rem 2rem;
+}
+
+section.sessao1 .textos-conteudo h2{
+    font-size: 2.5rem;
+}
+
+section.sessao1 .textos-conteudo p{
+    margin: 2rem 0;
+}
+
+section.sessao1 .textos-conteudo .buttons{
+    justify-content: left;
+}
+
+section.sessao1 .textos-conteudo .buttons a{
+    margin-left: 1rem;
+}
+
+section.sessao1 .img-game{
+    flex: 50%;
+    height: 400px;
+    background-image: url('../images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/******/
+
+section.comentarios{
+    margin: 4rem 0;
+}
+
+section.comentarios .comt{
+    -webkit-box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    padding: 1.5rem;
+    margin: 0 1rem;
+}
+
+section.comentarios .comt p{
+    font-style: italic;
+}
+
+section.comentarios .comt h3{
+    margin: 1rem 0;
+    color: #2bb222;
+    font-size: 1rem;
+}
+
+section.comentarios .comt img{
+    width: auto;
+    height: max-content;
+    margin-left: 1rem;
+}
+
+/*******/
+
+section.sobre .container > h2{
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid #2bb222;
+    width: max-content;
+}
+
+section.sobre .sobre-container .sobre-single{
+    -webkit-box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 60px -24px rgba(0,0,0,0.75);
+    margin: 0 1rem;
+}
+
+section.sobre .sobre-container .sobre-single .user{
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+section.sobre .sobre-container .sobre-single .user span{
+    background-color: #2bb222;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+section.sobre .sobre-container .sobre-single p{
+    padding: 2rem;
+}
+
+/******/
+
+footer{
+    margin-top: 4rem;
+}
+
+footer .part1{
+    padding: 3rem 0;
+    background-color: #2bb222;
+}
+
+footer .part1 .container{
+    max-width: 600px;
+}
+
+footer .part1 .part-text{
+    color: #fff;
+}
+
+footer .part1 .part-text h2{
+    border-bottom: 2px solid #fff;
+    width: max-content;
+    padding-bottom: 1rem;
+}
+
+footer .part1 .part-text p{
+    margin: 2rem 0;
+}
+
+footer .part1 .part-text .buttons{
+    justify-content: space-evenly;
+}
+
+footer .part2{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 760px){
+
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .links nav ul li{
+        margin: .8rem 0;
+    }
+    
+    section.comentarios .comt{
+        flex-direction: row;
+        margin: 1.5rem 0;
+    }
+
+    section.sobre .sobre-container .sobre-single{
+        margin: 2rem 0;
+    }
+
+    section.sobre .sobre-container .sobre-single .user{
+        padding: 1rem 0;
+    }
+
+    section.sobre .sobre-container .sobre-single .user span{
+        margin: 1rem 0;
+    }
+
+    footer .part1 .part-text h2{
+        border-bottom: 2px solid #fff;
+        width: auto;
+        padding-bottom: 1rem;
+    }
+
+}
